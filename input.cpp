@@ -26,7 +26,7 @@ bool take_input_csv(string fname){
         cout<<"file opened"<<endl;
     }
     else{
-        cout<<"File not found!";
+        cout<<"file not found";
         return 0;
     }
     for(int i=1;i<content.size();i++){
