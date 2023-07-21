@@ -23,3 +23,7 @@ A timetable generator for Institute schedule using C++
  * check if prof is available
  * check if classroom of required capacity is available
 
+-To deploy
+ * run ds.h file
+ * run maincode.cpp file
+ * enter lunch slot timings
