@@ -108,7 +108,7 @@ vector<time_table*> dept(no_of_dept);
 int lunch;
 
 string dept_name[no_of_dept] = {"CHEMICAL", "CIVIL", "CSE", "EE", "MECH", "MAT"};
-//string dept_code[no_of_dept] = {"CHD", "CEL", "CSC", "CSD", "CSL", "CSP", "CYL", "EED", "EEL", "EEY", "EFP", "MEC", "MED", "MEL", "MEP", "MEY", "MTD", "MTL", "MTY", "PHC", "PHL"};
+
 string dept_code[no_of_dept] = {"CH", "CE", "CS", "EE", "ME", "MT"};
 
 #include "input.cpp"
