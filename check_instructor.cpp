@@ -2,13 +2,13 @@
 using namespace std;
 
 bool checkmy_instructor_slot(instructor *Prof, slot* s ){
-    if (s==NULL)
+    if (!s)
     {
         return true;
     }
     
     slot* temp=Prof->first_slot;
-    while (temp!=NULL)
+    while (temp)
     {
         if (temp->day==s->day && temp->time_slot==s->time_slot )
         {
@@ -21,22 +21,22 @@ bool checkmy_instructor_slot(instructor *Prof, slot* s ){
 }
 
 void add_instructor_slot(instructor *Prof, slot* s){
-    if (s==NULL)
+    if (!s)
     {
         return;
     }
     
     slot* temp=Prof->first_slot;
-    if(temp==NULL){
+    if(!temp){
         Prof->first_slot=s;
         s->next=NULL;
         return;
     }
-    while (temp->next!=NULL)
+    while (temp->next)
     {
         temp=temp->next;
     }
-    temp->next=s;
+    temp->next=s; //adding slot s to prof's schedule
     temp=temp->next;
     temp->next=NULL;
     return;
