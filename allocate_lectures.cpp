@@ -36,14 +36,14 @@ bool allocate_lecture(course* IC, int l, bool tut, slot *& head){
                 flag =1;
                 // cout<<"enter"<<temp_slot->day<<" ";
                 // cout<<temp_slot->time_slot<<endl;
-                if( head == NULL){
+                if(!head){
                     head = temp_slot;
                     temp_slot = new slot();
                     temp_slot->day = head->day +1;
                 }
                 else{
                     slot* temp = head;
-                    while(temp->next != NULL){
+                    while(temp->next){
                         temp = temp->next;
                     }
                     temp->next = temp_slot;
