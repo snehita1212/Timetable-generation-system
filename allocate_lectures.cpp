@@ -68,8 +68,8 @@ bool allocate_lecture(course* IC, int l, bool tut, slot *& head){
     //     cout<<"its not null"<<endl;
     // }
     // else{
-    //     cout<<"its nulll"<<endl;
-    // }
+    //     cout<<"its nulll"<<endl;}
+    // 
     while(temp){
         cout<<"allocating "<<IC->course_code<<" "<<temp->day<<" "<<temp->time_slot <<endl;
         for(int i=0; i<dept.size(); i++){
