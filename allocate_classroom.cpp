@@ -38,7 +38,7 @@ int allocate_classroom_same(vector<course*> ICs){
             flag=0;
             slot* temp = ICs[i]->first_l;
             int twice=0;
-            while(temp != NULL && twice !=1){
+            while(temp && twice !=1){
                 if(room[j]->class_table.table[temp->day][temp->time_slot].first==0){
                     temp = temp->next;
                     continue;
@@ -47,7 +47,7 @@ int allocate_classroom_same(vector<course*> ICs){
                     flag=1;
                     break;
                 }
-                if(temp == NULL){
+                if(!temp){
                     twice = 1;
                     temp = ICs[i]->first_t;
                 }
