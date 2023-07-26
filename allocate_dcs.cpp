@@ -70,7 +70,7 @@ bool allocate_dc(vector<DC*> dc){
             if((*itr)->DCs[i]->l!=0){
                 allocate_dc_lecture((*itr)->DCs[i], (*itr)->DCs[i]->l, false, (*itr)->DCs[i]->first_l, (*itr)->dept_no);
             }
-            if((*itr)->DCs[i]->l!=0){
+            if((*itr)->DCs[i]->l==0){
                 allocate_dc_lecture((*itr)->DCs[i], (*itr)->DCs[i]->t, true, (*itr)->DCs[i]->first_t, (*itr)->dept_no);
             }
 
